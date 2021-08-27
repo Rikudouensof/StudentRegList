@@ -1,0 +1,35 @@
+﻿@model IEnumerable<StudentRegList.Data.ApplicationUser>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+
+<div class="col-10">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Reg Number</th>
+        <th>Department</th>
+        <th>Year</th>
+        <th>Cources</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var item in Model)
+      {
+      <tr>
+        <td>@item.FullName</td>
+        <td>@item.RegNumber</td>
+        <td>@item.Department</td>
+        <td>@item.year</td>
+        <td>@item.Courses</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
