@@ -17,7 +17,7 @@ using StudentRegList.Data;
 
 namespace StudentRegList.Areas.Identity.Pages.Account
 {
-    [Authorize]
+    
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
